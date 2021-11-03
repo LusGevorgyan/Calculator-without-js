@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Irish Grover', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(rgb(177, 168, 168), rgb(89, 97, 89));
+}
+
+.container {
+    position: relative;
+    background:linear-gradient(rgb(105, 103, 103), rgb(46, 51, 46));
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.container .calculator {
+    position: relative;
+    display: grid;
+}
+
+
+.container .calculator .value {
+    grid-column: span 4;
+    height: 140px;
+    width: 400px;
+    text-align: right;
+    border:none;
+    outline: none;
+    padding: 10px;
+    font-size: 40px;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+
+}
+
+.container .calculator span {
+    display: grid;
+    place-items: center;
+    height: 80px;
+    width: 100px;
+    color: #fff;
+    font-weight: 4000;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+}
+
+.container .calculator span:hover {
+    transition: 0s;
+    background: rgba(255, 255, 255, 0.05);
+} 
+
+.container .calculator span:active {
+    background: rgb(154, 158, 143);
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+} 
+
+.container .calculator .clear {
+    grid-column: span 2;
+    width: 150px;
+}
+
+.container .calculator .plus {
+    grid-row: span 2;
+    height: 150px;
+}
